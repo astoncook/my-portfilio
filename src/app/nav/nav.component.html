@@ -1,15 +1,13 @@
-<header>
-    <div class="toggle">
-      <i class="fas fa-2x" [ngClass]="{'fa-bars':!navOpen, 'fa-times':navOpen}"></i>
-    </div>
-    <nav>
-      <ul class="nav nav--hightlighted" [ngClass]="{'nav__open':navOpen}">
-        <li class="navBrand"><a href="#"> Aston Cook</a></li>
-        <li class="navItem"><a (click)="scroll('home')">Home</a></li>
-        <li class="navItem"><a (click)="scroll('about')">About</a></li>
-        <li class="navItem"><a (click)="scroll('skill')" >Portfolio</a></li>
-        <li class="navItem"><a (click)="scroll('portfolio')" >Portfolio</a></li>
-        <li class="navItem"><a (click)="scroll('contact')" >contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<div class="navbar navbar-default"></div>
+<div class="container-fluid">
+  <div class="navbar-header">
+    <a href="#" class="navbar-brand">Aston Cook</a>
+  </div>
+  
+  <ul class="nav navbar-nav">
+    <li><a href="/src/app/home/home.component.html">Home</a></li>
+    <li><a href="/src/app/about/about.component.html">About</a></li>
+    <li><a href="/src/app/portfolio/portfolio.component.html">Portfolio</a></li>
+    <li><a href="/src/app/contact/contact.component.html">contact</a></li>
+  </ul>
+</div>
